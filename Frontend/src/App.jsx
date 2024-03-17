@@ -3,9 +3,9 @@ import WebLayout from "./layout/common/WebLayout";
 import { Route, Routes } from "react-router-dom";
 import Loading from "./components/Others/Loading";
 
-const Home = lazy(() => import("./Pages/user/Home"));
+const HomePage = lazy(() => import("./Pages/user/HomePage"));
 const Contact = lazy(() => import("./Pages/user/Contact"));
-const Event = lazy(() => import("./Pages/user/Event"));
+const EventPage = lazy(() => import("./Pages/user/EventPage"));
 const About = lazy(() => import("./Pages/user/About"));
 const LoginPage = lazy(() => import("./Pages/shared/Auth/LoginPage"));
 const SignupPage = lazy(() => import("./Pages/shared/Auth/SignupPage"));
@@ -17,10 +17,10 @@ function App() {
       <Suspense fallback={<Loading size={100} />}>
         <Routes>
           <Route path="/" element={<WebLayout />}>
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<HomePage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/event" element={<Event />} />
+            <Route path="/event" element={<EventPage />} />
             <Route path="/term&condition" element={<Termconditions />} />
           </Route>
           <Route path="/login" element={<LoginPage />} />
