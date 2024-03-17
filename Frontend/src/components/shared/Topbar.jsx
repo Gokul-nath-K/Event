@@ -1,6 +1,24 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Topbar() {
+  const [topBarColor, setColor] = useState(false);
+
+  const navColor1 =
+    "bg-gray-100 w-full text-black mx-auto max-w-screen p-1 md:flex md:items-center md:justify-between z-50 fixed ";
+  const navColor2 =
+    "w-full text-black mx-auto max-w-screen p-1 md:flex md:items-center md:justify-between z-50 fixed backdrop-blur-2xl backdrop-saturate-200";
+
+  const changeColor = () => {
+    if (window.scrollY >= 150) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
+
   const pages = [
     {
       name: "Home",
@@ -25,7 +43,7 @@ function Topbar() {
   ];
   return (
     <>
-      <nav className="bg-white-800 w-full text-black mx-auto max-w-screen p-1 md:flex md:items-center md:justify-between z-50 sticky">
+      <nav className={topBarColor ? navColor2 : navColor1}>
         <div className="flex flex-row items-start justify-start font-bold">
           <span className=""> Event </span>
         </div>
@@ -35,7 +53,7 @@ function Topbar() {
               <li key={index}>
                 <NavLink
                   to={page.path}
-                  className="py-2 px-5 hover:bg-purple-400 hover:text-white rounded mx-3 border-b-2 border-transparent sticky"
+                  className="py-2 px-5 hover:bg-orange-400 hover:text-black rounded mx-3 border-b-2 border-transparent sticky"
                 >
                   {page.name}
                 </NavLink>
