@@ -22,7 +22,7 @@ function Topbar() {
   const pages = [
     {
       name: "Home",
-      path: "/home",
+      path: "/",
     },
     {
       name: "Contact",
