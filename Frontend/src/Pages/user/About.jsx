@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <>
-      <div className=" z-40 overflow-hidden relative mx-[4%] my-[1%]">
+      <div className=" z-40 overflow-hidden relative mx-[4%]">
         <div className="flex justify-center py-5">
           <p className="text-[35px]">ABOUT US</p>
         </div>
