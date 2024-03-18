@@ -25,12 +25,12 @@ function Topbar() {
       path: "/",
     },
     {
-      name: "About Us",
-      path: "/about",
+      name: "Events",
+      path: "/events",
     },
     {
       name: "What We Do",
-      path: "/event",
+      path: "/services",
     },
     {
       name: "Gallery",
@@ -47,7 +47,7 @@ function Topbar() {
     },
     {
       name: "Login",
-      path: "/login",
+      path: "/landing",
     },
   ];
   return (

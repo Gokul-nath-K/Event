@@ -1,5 +1,6 @@
 import React from "react";
 import { EventConstants } from "../../constants/EventConstants";
+import Wedding from "../../Pages/Events/Wedding";
 
 const Event = ({ length }) => {
   console.log(length);
@@ -20,7 +21,7 @@ const Event = ({ length }) => {
                       }
                     />
                     <div className="px-6 py-4">
-                      <div className="font-bold text-xl mb-2">{data.title } </div>
+                      <div className="font-bold text-xl mb-2 font-text text-center">{data.title } </div>
                       <p className="text-gray-700 text-base">
                         {data.content}
                       </p>

@@ -7,7 +7,7 @@ const EventPage = ({ length = EventConstants.length }) => {
     <>
       <div className="bg-white relative my-[1%]">
         <div className="flex justify-center py-5 ">
-          /<p className="text-[35px]">OUR SERVICES</p>
+          /<p className="text-[35px] font-text text-purple-800">OUR SERVICES</p>
         </div>
         <Event length={length} />
       </div>

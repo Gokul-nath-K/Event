@@ -6,7 +6,7 @@ const EventFooter = () => {
     <>
       <div className="w-full flex flex-row justify-center my-10">
         <NavLink
-          to="/event"
+          to="/services"
           className="bg-amber-400 hover:bg-amber-500 p-3 px-10 rounded-lg text-white font-bold"
         >
           All Services
