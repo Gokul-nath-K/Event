@@ -25,16 +25,25 @@ function Topbar() {
       path: "/",
     },
     {
-      name: "Contact",
-      path: "/contact",
+      name: "About Us",
+      path: "/about",
     },
     {
-      name: "Events",
+      name: "What We Do",
       path: "/event",
     },
     {
-      name: "About",
-      path: "/about",
+      name: "Gallery",
+      path: "/gallery",
+    },
+    {
+      name: "Contact Us",
+      path: "/contact",
+    },
+    
+    {
+      name: "FAQ",
+      path: "/faq",
     },
     {
       name: "Login",
@@ -45,7 +54,7 @@ function Topbar() {
     <>
       <nav className={topBarColor ? navColor2 : navColor1}>
         <div className="flex flex-row items-start justify-start font-bold">
-          <span className=""> Event </span>
+          <span className="font-title"> Golden Glitz </span>
         </div>
         <ul className="flex flex-wrap items-center font-bold py-4">
           {pages &&

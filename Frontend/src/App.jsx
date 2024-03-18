@@ -17,10 +17,17 @@ function App() {
       <Suspense fallback={<Loading size={100} />}>
         <Routes>
           <Route path="/" element={<WebLayout />}>
+<<<<<<< Updated upstream
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<Contact />} />
+=======
+            <Route path="/home" element={<HomePage />} />
+>>>>>>> Stashed changes
             <Route path="/about" element={<About />} />
             <Route path="/event" element={<EventPage />} />
+            <Route path="/gallery" element={<Termconditions />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<Termconditions />} />
             <Route path="/term&condition" element={<Termconditions />} />
           </Route>
           <Route path="/login" element={<LoginPage />} />
