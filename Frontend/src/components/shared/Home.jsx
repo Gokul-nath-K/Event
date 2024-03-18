@@ -15,15 +15,12 @@ const Home = () => {
           />
           <div className="absolute top-1/3 flex flex-col align-middle justify-center w-full">
             <div className="flex flex-row justify-center">
-            <p className="text-[100px] font-title"> Golden Glitz</p>
+              <p className="text-[100px] font-title"> Golden Glitz</p>
             </div>
             <div className="flex flex-row justify-center">
-            <p className="text-[100px] font-title">Event Planners</p>
+              <p className="text-[100px] font-title">Event Planners</p>
             </div>
           </div>
-        </div>
-        <div className="fixed overflow-hidden">
-          <img src="https://ik.imagekit.io/gokulnathk/PartyEvent/party02.jpg" />
         </div>
       </div>
     </>
