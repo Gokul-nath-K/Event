@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {},
     fontFamily:{
-      title:["Rochester", "cursive"]
+      title:["Rochester", "cursive"],
+      text:["Montaga", "serif"]
     }
   },
   plugins: [],
