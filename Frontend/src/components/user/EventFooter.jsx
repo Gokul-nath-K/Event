@@ -7,7 +7,7 @@ const EventFooter = () => {
       <div className="w-full flex flex-row justify-center my-10">
         <NavLink
           to="/event"
-          className="bg-purple-500 hover:bg-purple-800 p-3 px-10 rounded-lg text-white font-bold"
+          className="bg-amber-400 hover:bg-amber-500 p-3 px-10 rounded-lg text-white font-bold"
         >
           All Services
         </NavLink>
