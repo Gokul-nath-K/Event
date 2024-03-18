@@ -17,7 +17,7 @@ function App() {
       <Suspense fallback={<Loading size={100} />}>
         <Routes>
           <Route path="/" element={<WebLayout />}>
-            <Route path="/home" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/event" element={<EventPage />} />
