@@ -33,20 +33,20 @@ const EventsTable = () => {
           <tbody>
             <tr class="bg-white border-b ">
               <td class="px-6 py-4 font-medium ">01</td>
-              <td class="px-6 py-4">Shanti's Wedding</td>
+              <td class="px-6 py-4">Jenifer</td>
 
               <td class="px-6 py-4 ">Wedding</td>
               <td class="px-6 py-4 ">10-FEB-2024</td>
-              <td class="px-6 py-4 ">Expired</td>
+              <td class="px-6 py-4 ">Completed</td>
               <td class="px-6 py-4 ">7.5L</td>
             </tr>
             <tr class="bg-white border-b ">
               <td class="px-6 py-4 font-medium ">02</td>
-              <td class="px-6 py-4">Meena's Aniversary</td>
+              <td class="px-6 py-4">Arun</td>
 
               <td class="px-6 py-4 ">Aniversary</td>
-              <td class="px-6 py-4 ">17-DEC-2024</td>
-              <td class="px-6 py-4 ">Expired</td>
+              <td class="px-6 py-4 ">17-DEC-2023</td>
+              <td class="px-6 py-4 ">Completed</td>
               <td class="px-6 py-4 ">2.5L</td>
             </tr>
           </tbody>

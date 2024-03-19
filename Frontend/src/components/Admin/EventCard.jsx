@@ -20,10 +20,7 @@ const EventCard = () => {
                 Ritu's Birthday{" "}
               </div>
               <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quibusdam odio fugit ipsa nihil suscipit voluptatum, quidem qui
-                ad? Praesentium sint earum ex eaque autem! Voluptas ex
-                blanditiis cupiditate quos consequuntur.
+              It's Ritu's birthday, and we're raising a toast to this amazing person! Join us as we celebrate another year of Ritu's warmth, kindness, and positive personality trait of Ritu.Get ready to shimmy and shake! It's Ritu's birthday, and we're throwing a dance party for the ages.
               </p>
             </div>
           </div>
@@ -34,20 +31,17 @@ const EventCard = () => {
               <img
                 className="w-full "
                 src={
-                  "https://ik.imagekit.io/gokulnathk/PartyEvent/birthday04.jpg"
+                  "https://ik.imagekit.io/gokulnathk/PartyEvent/engament03.jpg"
                 }
               />
             </div>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2 font-text text-center">
                 {" "}
-                Ritu's Birthday{" "}
+                Ajitha's Anniversary{" "}
               </div>
               <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quibusdam odio fugit ipsa nihil suscipit voluptatum, quidem qui
-                ad? Praesentium sint earum ex eaque autem! Voluptas ex
-                blanditiis cupiditate quos consequuntur.
+              On this special day, we celebrate the enduring love of Ajitha and Rohan. Their journey together has been a beautiful testament to positive quality of their relationship like commitment, laughter and unwavering support.
               </p>
             </div>
           </div>
