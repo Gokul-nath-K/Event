@@ -78,7 +78,7 @@ const FlowChart = () => {
               type="button"
               class="inline-flex items-center text-blue-700 dark:text-blue-600 font-medium hover:underline"
             >
-              31 Nov - 31 Dev{" "}
+              01 JAN - 19 MAR{" "}
               <svg
                 class="w-3 h-3 ms-2"
                 aria-hidden="true"
@@ -345,7 +345,7 @@ const FlowChart = () => {
               href="#"
               class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-600 hover:text-blue-700 dark:hover:text-blue-500  hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2"
             >
-              Traffic analysis
+              {/* Traffic anal */}
               <svg
                 class="w-2.5 h-2.5 ms-1.5 rtl:rotate-180"
                 aria-hidden="true"
