@@ -1,4 +1,5 @@
 import React from "react";
+import "../../assets/css/Home.css";
 import About from "./About";
 import EventPage from "./EventPage";
 import EventFooter from "../../components/user/EventFooter";
