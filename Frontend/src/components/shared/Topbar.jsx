@@ -49,6 +49,10 @@ function Topbar() {
       name: "Login",
       path: "/landing",
     },
+    {
+      name: "Profile",
+      path: "/profile",
+    },
     // {
     //   name: "Dashboard",
     //   path: "/admin/dashboard",
@@ -58,11 +62,11 @@ function Topbar() {
     <>
       <nav className={topBarColor ? navColor2 : navColor1}>
         <div className="flex flex-row items-start justify-start font-bold">
-        <img
-                  src="https://ik.imagekit.io/gokulnathk/PartyEvent/GoldenGlitz(1).svg"
-                  className="h-8 me-3"
-                  alt="FlowBite Logo"
-                />
+          <img
+            src="https://ik.imagekit.io/gokulnathk/PartyEvent/GoldenGlitz(1).svg"
+            className="h-8 me-3"
+            alt="FlowBite Logo"
+          />
         </div>
         <ul className="flex flex-wrap items-center font-bold py-4">
           {pages &&

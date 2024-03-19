@@ -22,7 +22,7 @@ import AdminLayout from "./layout/Admin/AdminLayout";
 import Unauthorized from "./Pages/shared/Others/Unauthorized";
 import ConfigPage from "./Pages/Admin/ConfigPage";
 import EventDashboard from "./Pages/Admin/EventDashboard";
-
+import ProfilePage from "./Pages/user/ProfilePage";
 
 const HomePage = lazy(() => import("./Pages/user/HomePage"));
 const Contact = lazy(() => import("./Pages/user/Contact"));
@@ -43,6 +43,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/events" element={<About />} />
+            <Route path="/profile" element={<ProfilePage />} />
             <Route path="/services" element={<EventPage />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
@@ -57,9 +58,18 @@ function App() {
 
             {/* <Route path="/wedding" element={<Wedding />} /> */}
             {/* <Route path="/weddingregistered" element={</>} /> */}
-            <Route path="/goldenpackage/marriage" element={<GoldenPackageMarriage />} />
-            <Route path="/premiumpackage/marriage" element={<PremiumPackageMarriage />} />
-            <Route path="/weddingdecoration" element={<WeddingDecorationPage />} />
+            <Route
+              path="/goldenpackage/marriage"
+              element={<GoldenPackageMarriage />}
+            />
+            <Route
+              path="/premiumpackage/marriage"
+              element={<PremiumPackageMarriage />}
+            />
+            <Route
+              path="/weddingdecoration"
+              element={<WeddingDecorationPage />}
+            />
             <Route path="/weddingform" element={<WeddingRegistrationForm />} />
             {/* <Route path="/weddingform" element={<Layout><WeddingRegistrationForm /></Layout>} /> */}
           </Route>
