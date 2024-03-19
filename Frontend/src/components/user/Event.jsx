@@ -3,7 +3,6 @@ import { EventConstants } from "../../constants/EventConstants";
 import Wedding from "../../Pages/Events/Wedding";
 
 const Event = ({ length }) => {
-  console.log(length);
   return (
     <>
       <div className="flex flex-row flex-wrap justify-center">
@@ -21,10 +20,10 @@ const Event = ({ length }) => {
                       }
                     />
                     <div className="px-6 py-4">
-                      <div className="font-bold text-xl mb-2 font-text text-center">{data.title } </div>
-                      <p className="text-gray-700 text-base">
-                        {data.content}
-                      </p>
+                      <div className="font-bold text-xl mb-2 font-text text-center">
+                        {data.title}{" "}
+                      </div>
+                      <p className="text-gray-700 text-base">{data.content}</p>
                     </div>
                   </div>
                 </div>
