@@ -1,8 +1,12 @@
 import React from "react";
 import { EventConstants } from "../../constants/EventConstants";
-import Wedding from "../../Pages/Events/Wedding";
+import Wedding from "../../Pages/Events/weddingdecoration";
+import { useNavigate } from "react-router-dom";
 
 const Event = ({ length }) => {
+
+  const navigate = useNavigate();
+
   console.log(length);
   return (
     <>
@@ -11,7 +15,7 @@ const Event = ({ length }) => {
           EventConstants.map(
             (data) =>
               data.id <= length && (
-                <div key={data.id} className="mx-5 my-5">
+                <div key={data.id} className="mx-5 my-5 cursor-pointer" onClick={() => navigate(data.path)}>
                   <div className="max-w-sm rounded overflow-hidden shadow-lg">
                     <img
                       className="w-full"

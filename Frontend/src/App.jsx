@@ -5,6 +5,16 @@ import Loading from "./components/Others/Loading";
 import Faq from "./Pages/user/Faq";
 import LandingPage from "./Pages/user/Landing";
 import Gallery from "./Pages/user/Gallery";
+import Wedding from "./Pages/Events/weddingdecoration";
+import Music from "./Pages/Events/Music";
+import Anniversary from "./Pages/Events/Anniversary";
+import Farewell from "./Pages/Events/Farewell";
+import Bachelor from "./Pages/Events/Bachelor";
+import Birthday from "./Pages/Events/Birthday";
+import WeddingDecorationPage from "./Pages/Events/weddingdecoration";
+import PremiumPackageMarriage from "./Pages/Events/WeddingPremium";
+import GoldenPackageMarriage from "./Pages/Events/WeddingGold";
+import WeddingRegistrationForm from "./Pages/Events/Wedding";
 
 const HomePage = lazy(() => import("./Pages/user/HomePage"));
 const Contact = lazy(() => import("./Pages/user/Contact"));
@@ -31,6 +41,19 @@ function App() {
             <Route path="/faq" element={<Faq />} />
             <Route path="/term&condition" element={<Termconditions />} />
             <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+            {/* <Route path="/music" element={<Music/>} />
+            <Route path="/birthday" element={<Birthday/>} />
+            <Route path="/anniversary" element={<Anniversary />} />
+            <Route path="/farewell" element={<Farewell />} />
+            <Route path="/bachelor" element={<Bachelor />} />  */}
+
+            {/* <Route path="/wedding" element={<Wedding />} /> */}
+            {/* <Route path="/weddingregistered" element={</>} /> */}
+            <Route path="/goldenpackage/marriage" element={<GoldenPackageMarriage />} />
+            <Route path="/premiumpackage/marriage" element={<PremiumPackageMarriage />} />
+            <Route path="/weddingdecoration" element={<WeddingDecorationPage />} />
+            <Route path="/weddingform" element={<WeddingRegistrationForm />} />
+            {/* <Route path="/weddingform" element={<Layout><WeddingRegistrationForm /></Layout>} /> */}
           </Route>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/landing" element={<LandingPage />} />
