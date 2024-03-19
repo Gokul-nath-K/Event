@@ -11,6 +11,7 @@ import Anniversary from "./Pages/Events/Anniversary";
 import Farewell from "./Pages/Events/Farewell";
 import Bachelor from "./Pages/Events/Bachelor";
 import Birthday from "./Pages/Events/Birthday";
+import ProfilePage from "./Pages/user/ProfilePage";
 
 
 const WeddingDecorationPage=lazy(()=> import("./Pages/Events/weddingdecoration"));
