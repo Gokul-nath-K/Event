@@ -11,6 +11,8 @@ import Anniversary from "./Pages/Events/Anniversary";
 import Farewell from "./Pages/Events/Farewell";
 import Bachelor from "./Pages/Events/Bachelor";
 import Birthday from "./Pages/Events/Birthday";
+
+
 const WeddingDecorationPage=lazy(()=> import("./Pages/Events/weddingdecoration"));
 const PremiumPackageMarriage=lazy(()=> import("./Pages/Events/WeddingPremium"));
 const GoldenPackageMarriage=lazy(()=> import("./Pages/Events/WeddingGold"));
@@ -22,6 +24,7 @@ const AdminLayout=lazy(()=> import("./layout/Admin/AdminLayout"));
 const Unauthorized=lazy(()=> import("./Pages/shared/Others/Unauthorized"));
 const ConfigPage=lazy(()=> import("./Pages/Admin/ConfigPage"));
 const EventDashboard=lazy(()=> import("./Pages/Admin/EventDashboard"));
+
 
 
 const HomePage = lazy(() => import("./Pages/user/HomePage"));
@@ -43,6 +46,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/events" element={<About />} />
+            <Route path="/profile" element={<ProfilePage />} />
             <Route path="/services" element={<EventPage />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
@@ -57,9 +61,18 @@ function App() {
 
             {/* <Route path="/wedding" element={<Wedding />} /> */}
             {/* <Route path="/weddingregistered" element={</>} /> */}
-            <Route path="/goldenpackage/marriage" element={<GoldenPackageMarriage />} />
-            <Route path="/premiumpackage/marriage" element={<PremiumPackageMarriage />} />
-            <Route path="/weddingdecoration" element={<WeddingDecorationPage />} />
+            <Route
+              path="/goldenpackage/marriage"
+              element={<GoldenPackageMarriage />}
+            />
+            <Route
+              path="/premiumpackage/marriage"
+              element={<PremiumPackageMarriage />}
+            />
+            <Route
+              path="/weddingdecoration"
+              element={<WeddingDecorationPage />}
+            />
             <Route path="/weddingform" element={<WeddingRegistrationForm />} />
             {/* <Route path="/weddingform" element={<Layout><WeddingRegistrationForm /></Layout>} /> */}
           </Route>
