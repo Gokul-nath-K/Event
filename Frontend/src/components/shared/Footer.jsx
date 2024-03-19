@@ -31,6 +31,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/css/footer.css';
+import { BsFacebook, BsInstagram, BsTwitterX } from 'react-icons/bs';
 const Footer = () => {
   const footerContent = (
     <div className="footer-content">
@@ -48,13 +49,13 @@ const Footer = () => {
           <li>
             <Link to="/privacypolicy">Privacy Policy</Link>
           </li>
-          {/* <li>
-            <Link to="/contactus">Contact Us</Link>
+          <li>
+            mail:goldenglitz@gmail.com
           
           </li>
           <li>
-            <Link to="/admin">login as administrator</Link>
-          </li> */}
+            mobile:8838187018
+          </li>
         </ul>
       </div>
       <div className="footer-social">
@@ -62,17 +63,17 @@ const Footer = () => {
         <ul className="social-icons">
           <li>
             <a href="https://www.facebook.com/planevent/" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-facebook"></i>
+            <BsFacebook />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/BizBash" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
+            <BsTwitterX />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/eventiaevents/?hl=en" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i>
+            <BsInstagram />
             </a>
           </li>
         </ul>

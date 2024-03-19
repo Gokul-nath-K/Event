@@ -7,9 +7,9 @@ const EventDashboard = () => {
   return (
     <>
       <div class="col-span-8 overflow-hidden rounded-xl sm:px-8">
-        <Header title={"Oncoming events"} />
+        <Header title={"Upcoming events"} />
         <EventCard />
-        <Header title={"Past events"} />
+        <Header title={"Completed events"} />
         <EventsTable />
       </div>
     </>

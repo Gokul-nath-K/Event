@@ -49,16 +49,20 @@ function Topbar() {
       name: "Login",
       path: "/landing",
     },
-    {
-      name: "Dashboard",
-      path: "/admin/dashboard",
-    },
+    // {
+    //   name: "Dashboard",
+    //   path: "/admin/dashboard",
+    // },
   ];
   return (
     <>
       <nav className={topBarColor ? navColor2 : navColor1}>
         <div className="flex flex-row items-start justify-start font-bold">
-          <span className="font-title"> Golden Glitz </span>
+        <img
+                  src="https://ik.imagekit.io/gokulnathk/PartyEvent/GoldenGlitz(1).svg"
+                  className="h-8 me-3"
+                  alt="FlowBite Logo"
+                />
         </div>
         <ul className="flex flex-wrap items-center font-bold py-4">
           {pages &&

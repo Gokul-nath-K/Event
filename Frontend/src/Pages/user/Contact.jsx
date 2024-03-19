@@ -4,7 +4,7 @@ import '../../assets/css/contactus.css';
 const Contact = () => {
   return (
     <div>
-       <div className="container-fluid p-11 bg-purple-100">
+       <div className="container-fluid p-[6%] bg-purple-100">
       <div className="contact-container ">
         <h1 className="contact-title">Contact Us</h1>
         <div className="contact-content">
