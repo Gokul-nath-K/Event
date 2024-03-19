@@ -40,7 +40,7 @@ function Topbar() {
       name: "Contact Us",
       path: "/contact",
     },
-    
+
     {
       name: "FAQ",
       path: "/faq",
@@ -48,6 +48,10 @@ function Topbar() {
     {
       name: "Login",
       path: "/landing",
+    },
+    {
+      name: "Dashboard",
+      path: "/admin/dashboard",
     },
   ];
   return (
