@@ -23,12 +23,12 @@ export default function Login() {
 
     if (
       loginState.email_address === "user@gmail.com" &&
-      loginState.password === "user123"
+      loginState.password === "user@9876"
     ) {
       navigate("/");
     } else if (
       loginState.email_address === "admin@gmail.com" &&
-      loginState.password === "admin123"
+      loginState.password === "admin@9876"
     ) {
       navigate("/admin/dashboard");
     }
