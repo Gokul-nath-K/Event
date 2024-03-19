@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <>
-      <div className=" z-40 overflow-hidden relative mx-[4%]">
+      <div className=" z-40 overflow-hidden relative px-[4%] pt-[4%] bg-purple-100">
         <div className="flex justify-center py-5">
           {/* <p className="text-[35px]">ABOUT US</p> */}
         </div>

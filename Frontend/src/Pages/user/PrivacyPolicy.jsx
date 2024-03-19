@@ -4,7 +4,7 @@ import '../../assets/css/privacy.css';
 const PrivacyPolicy = () => {
   return (
     <>
-     <div className="container-fluid p-11 bg-purple-100">
+     <div className="container-fluid p-[6%] bg-purple-100">
     <div className="privacy-container">
       <h1 className="privacy-title">Privacy Policy</h1>
       <div className="privacy-content">

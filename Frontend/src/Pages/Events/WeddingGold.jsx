@@ -6,25 +6,26 @@ import { Link } from 'react-router-dom';
 const cakesData = [
   {
     image: 'https://assets-news.housing.com/news/wp-content/uploads/2022/01/11220447/wedding-stage-decoration-shutterstock_1193416354-1200x700-compressed.jpg',
-     name:'',
-  },
-  {
+    name:'',
+},
+{
     image: 'https://nfdonline.com/wp-content/uploads/2021/11/IMG_6183.jpg',
     name:'',
    
-  },
+},
   {
     image: 'https://chinchincelebration.com/wp-content/uploads/2019/12/c4.jpg',
     name:'',
   
-  },
-  {
+},
+{
     image: 'https://chinchincelebration.com/wp-content/uploads/2019/12/WhatsApp-Image-2019-06-17-at-03.32.03-1.jpeg',
     name:'',
-   
-  },
-  {
-    image: 'https://5.imimg.com/data5/PK/CZ/ON/SELLER-4174837/bc1qugrtknpjz52vc4m559q7zumkc4268kp7skrsee.jpg',
+    
+},
+{
+    // image: 'https://5.imimg.com/data5/PK/CZ/ON/SELLER-4174837/bc1qugrtknpjz52vc4m559q7zumkc4268kp7skrsee.jpg',
+    image: 'https://assets-news.housing.com/news/wp-content/uploads/2022/01/11220447/wedding-stage-decoration-shutterstock_1193416354-1200x700-compressed.jpg',
     name:'',
     
   },

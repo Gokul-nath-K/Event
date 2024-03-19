@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 const cakesData = [
   {
     image: 'https://wedbook.in/wp-content/uploads/2022/03/Wedding-Stage-Decor-12.jpg',
-     name:'',
-  },
-  {
+    name:'',
+},
+{
     image: 'https://i.pinimg.com/originals/48/5c/9c/485c9cbcee7fb6ae1cd6a503a4ef3766.jpg',
     name:'',
    
@@ -22,15 +22,16 @@ const cakesData = [
   {
     image: 'https://i0.wp.com/www.tulipsevents.com/wp-content/uploads/2022/01/sleek-white-walima-stage-decorations-ideas-Tulips-Events-6.jpg?fit=1260%2C700&ssl=1',
     name:'',
-   
-  },
-  {
+    
+},
+{
     image: 'https://www.a2zeventssolutions.com/wp-content/uploads/2020/09/stages-designers-in-lahore-3-1024x683.jpg',
     name:'',
     
-  },
-  {
-    image: 'https://i.pinimg.com/550x/18/01/eb/bc1qugrtknpjz52vc4m559q7zumkc4268kp7skrsee.jpg',
+},
+{
+      image: 'https://wedbook.in/wp-content/uploads/2022/03/Wedding-Stage-Decor-12.jpg',
+    // image: 'https://i.pinimg.com/550x/18/01/eb/bc1qugrtknpjz52vc4m559q7zumkc4268kp7skrsee.jpg',
     name:'',
    
   },

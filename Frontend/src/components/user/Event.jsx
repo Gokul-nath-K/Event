@@ -10,7 +10,7 @@ const Event = ({ length }) => {
   console.log(length);
   return (
     <>
-      <div className="flex flex-row flex-wrap justify-center">
+      <div className="flex flex-row flex-wrap justify-center ">
         {EventConstants &&
           EventConstants.map(
             (data) =>

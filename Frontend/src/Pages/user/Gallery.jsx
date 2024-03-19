@@ -31,7 +31,7 @@ function Gallery() {
   return (
     <div>
         {/* <HomeNavbar/> */}
-    <div className="gallery">
+    <div className="gallery p-[6%] bg-purple-100">
       {loadedImages.map((imageUrl, index) => (
         <div className="image-container" key={index}>
           <img src={imageUrl} alt={`Image ${index + 1}`} />
