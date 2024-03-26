@@ -11,5 +11,7 @@ public interface BookingService {
 
     Bookings postBooking(BookingRequest bookingRequest);
 
+    Bookings updateBookings(Long booking_id, BookingRequest bookingRequest);
+
 
 }

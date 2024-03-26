@@ -41,6 +41,18 @@ public class VenueServiceImplementation implements VenueService {
     }
 
     @Override
+    public Venue updateVenueAvailability(Venue venue) {
+
+        Venue updatedVenue = venueRepository.findById(venue.getId()).orElseThrow();
+
+        updatedVenue.setCapacity(venue.getCapacity());
+        updatedVenue.setLocation(venue.getLocation());
+        updatedVenue.setAvailable(!venue.isAvailable());
+
+        return venueRepository.save(updatedVenue);
+    }
+
+    @Override
     public void deleteVenue(Long id) {
         venueRepository.deleteById(id);
     }

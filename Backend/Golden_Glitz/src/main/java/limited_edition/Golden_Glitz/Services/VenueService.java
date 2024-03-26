@@ -9,5 +9,8 @@ public interface VenueService {
     Venue getVenueById(Long id);
     Venue createVenue(Venue venue);
     Venue updateVenue(Long id, Venue venue);
+
+    Venue updateVenueAvailability(Venue venue);
+
     void deleteVenue(Long id);
 }

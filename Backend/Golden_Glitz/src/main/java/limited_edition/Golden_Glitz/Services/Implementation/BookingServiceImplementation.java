@@ -10,6 +10,7 @@ import limited_edition.Golden_Glitz.Repository.EventRepository;
 import limited_edition.Golden_Glitz.Repository.UserRepository;
 import limited_edition.Golden_Glitz.Repository.VenueRepository;
 import limited_edition.Golden_Glitz.Services.BookingService;
+import limited_edition.Golden_Glitz.Services.VenueService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +29,8 @@ public class BookingServiceImplementation implements BookingService {
 
     private final VenueRepository venueRepository;
 
+    private final VenueService venueService;
+
     @Override
     public List<Bookings> getAllBookings() {
 
@@ -43,7 +46,7 @@ public class BookingServiceImplementation implements BookingService {
 
         Venue venue = venueRepository.findById(bookingRequest.getVenue_id()).orElseThrow();
 
-        return Bookings
+        Bookings result = Bookings
                 .builder()
                 .date(new Date())
                 .head_count(bookingRequest.getHead_count())
@@ -54,5 +57,36 @@ public class BookingServiceImplementation implements BookingService {
                 .event(event)
                 .venue(venue)
                 .build();
+
+        bookingRepository.save(result);
+
+        return result;
     }
+
+    @Override
+    public Bookings updateBookings(Long booking_id, BookingRequest bookingRequest) {
+
+        User user = userRepository.findById(bookingRequest.getUser_id()).orElseThrow();
+
+        Events event = eventRepository.findByCategory(bookingRequest.getCategory());
+
+
+        Venue venue = venueRepository.findById(bookingRequest.getVenue_id()).orElseThrow();
+
+        Venue updatedVenue = venueService.updateVenueAvailability(venue);
+
+        Bookings updatedBooking = bookingRepository.findById(booking_id).orElseThrow();
+
+        updatedBooking.setCost(bookingRequest.getCost());
+        updatedBooking.setStatus(bookingRequest.getStatus());
+        updatedBooking.setHead_count(bookingRequest.getHead_count());
+        updatedBooking.setSubscription(bookingRequest.getSubscription());
+        updatedBooking.setEvent(event);
+        updatedBooking.setVenue(updatedVenue);
+        updatedBooking.setUser(user);
+
+        return bookingRepository.save(updatedBooking);
+    }
+
+
 }

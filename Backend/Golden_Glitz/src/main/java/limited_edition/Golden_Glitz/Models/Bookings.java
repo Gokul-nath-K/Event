@@ -23,6 +23,7 @@ public class Bookings {
     private String subscription;
     private String status;
     private Double cost;
+    private Boolean isCompleted;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -32,8 +33,8 @@ public class Bookings {
     @JoinColumn(name = "event_id")
     private Events event;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "venue_id", referencedColumnName = "id")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "venue_id")
     private Venue venue;
 
 }
