@@ -1,4 +1,5 @@
 import React from "react";
+import { BsPerson, BsPersonCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -31,12 +32,25 @@ const Navbar = () => {
                 </svg>
               </button>
               <Link to="/" className="flex ms-2 md:me-24">
-                <img
+                {/* <img
                   src="https://ik.imagekit.io/gokulnathk/PartyEvent/GoldenGlitz(1).svg"
                   className="h-8 me-3"
                   alt="FlowBite Logo"
-                />
+                /> */}
+              <p className="text-[25px] font-title ml-4"> Golden Glitz</p>
               </Link>
+            </div>
+            <div className="pr-10">
+                <button >
+                  <div className="flex flex-row">
+                    <div className="px-4">
+                    <BsPersonCircle size={25}/>
+                    </div>
+                    <div className="">
+                    <p className="font-bold">Profile</p>
+                    </div>
+                  </div>
+                </button>
             </div>
           </div>
         </div>

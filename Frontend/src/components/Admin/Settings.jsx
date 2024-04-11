@@ -3,7 +3,7 @@ import React from 'react'
 const Settings = () => {
   return (
     <>
-    <p class="py-2 text-xl font-semibold">Email Address</p>
+    <p class="py-2 text-xl font-semibold pt-8">Email Address</p>
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <p class="text-gray-600">
             Your email address is <strong>john.doe@company.com</strong>

@@ -32,6 +32,10 @@ export default function Login() {
     ) {
       navigate("/admin/dashboard");
     }
+    else {
+
+      alert("Invalid login state")
+    }
   };
 
   return (

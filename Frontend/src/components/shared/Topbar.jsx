@@ -5,9 +5,9 @@ function Topbar() {
   const [topBarColor, setColor] = useState(false);
 
   const navColor1 =
-    "bg-gray-100 w-full text-black mx-auto max-w-screen p-1 md:flex md:items-center md:justify-between z-50 fixed ";
+    "bg-gray-100 w-full text-black mx-auto max-w-screen p-1 md:flex md:items-center md:justify-between z-50 fixed top-0";
   const navColor2 =
-    "w-full text-black mx-auto max-w-screen p-1 md:flex md:items-center md:justify-between z-50 fixed backdrop-blur-2xl backdrop-saturate-200";
+    "w-full text-black mx-auto max-w-screen p-1 md:flex md:items-center md:justify-between z-50 backdrop-blur-2xl backdrop-saturate-200 fixed top-0";
 
   const changeColor = () => {
     if (window.scrollY >= 150) {
@@ -61,12 +61,13 @@ function Topbar() {
   return (
     <>
       <nav className={topBarColor ? navColor2 : navColor1}>
-        <div className="flex flex-row items-start justify-start font-bold">
-          <img
+        <div className="flex flex-row items-start justify-start font-bold ml-10">
+          {/* <img
             src="https://ik.imagekit.io/gokulnathk/PartyEvent/GoldenGlitz(1).svg"
             className="h-8 me-3"
             alt="FlowBite Logo"
-          />
+          /> */}
+          <p className="text-[25px] font-title"> Golden Glitz</p>
         </div>
         <ul className="flex flex-wrap items-center font-bold py-4">
           {pages &&
@@ -74,7 +75,7 @@ function Topbar() {
               <li key={index}>
                 <NavLink
                   to={page.path}
-                  className="py-2 px-5 hover:bg-orange-400 hover:text-black rounded mx-3 border-b-2 border-transparent sticky"
+                  className="py-2 px-5 hover:bg-orange-400 hover:text-black rounded mx-3 border-transparent sticky"
                 >
                   {page.name}
                 </NavLink>

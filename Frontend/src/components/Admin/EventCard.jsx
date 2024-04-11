@@ -5,7 +5,7 @@ const EventCard = () => {
     <>
       <div className="flex flex-row grow w-full justify-start">
         <div className="my-5">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg max-h-[500px] ">
+          <div className="max-w-sm rounded overflow-hidden shadow-lg min-h-[450px] ">
             <div className=" h-[200px] overflow-hidden ">
               <img
                 className="w-full "
@@ -26,7 +26,7 @@ const EventCard = () => {
           </div>
         </div>
         <div className="mx-5 my-5">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg max-h-[500px] ">
+          <div className="max-w-sm rounded overflow-hidden shadow-lg min-h-[450px] ">
             <div className=" h-[200px] overflow-hidden ">
               <img
                 className="w-full "
