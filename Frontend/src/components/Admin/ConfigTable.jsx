@@ -3,7 +3,7 @@ import React from "react";
 const ConfigTable = () => {
   return (
     <>
-      <div className="flex flex-row justify-center mx-10">
+      <div className="flex flex-row justify-center mx-8">
         <div class="relative overflow-x-auto grow shadow-md sm:rounded-lg mx-5">
           <table class="w-full text-sm text-left rtl:text-right">
             <caption class="p-5 text-lg font-semibold text-left rtl:text-right">

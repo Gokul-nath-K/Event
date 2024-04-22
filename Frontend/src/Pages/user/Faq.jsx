@@ -45,8 +45,8 @@ const Faq = () => {
     <div>
       {/* <FaqNavbar/> */}
       {/* <Topbar/> */}
-      <div className="container-fluid p-4 bg-purple-100">
-      <div className="faq-container h-[93vh] flex flex-col justify-center bg-purple-100">
+      <div className="container-fluid p-4 bg-purple-100 h-screen">
+      <div className="faq-container h-[93vh] flex flex-col justify-center bg-white-100">
         <h1>Frequently Asked Questions</h1>
         <div className="faq-list">
           {faqData.map((faq, index) => (

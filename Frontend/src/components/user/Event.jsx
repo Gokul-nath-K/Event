@@ -4,7 +4,6 @@ import Wedding from "../../Pages/Events/weddingdecoration";
 import { useNavigate } from "react-router-dom";
 
 const Event = ({ length }) => {
-
   const navigate = useNavigate();
 
   return (
@@ -14,10 +13,14 @@ const Event = ({ length }) => {
           EventConstants.map(
             (data) =>
               data.id <= length && (
-                <div key={data.id} className="mx-5 my-5 cursor-pointer" onClick={() => navigate(data.path)}>
-                  <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                <div
+                  key={data.id}
+                  className="mx-5 my-10 cursor-pointer  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 "
+                  onClick={() => navigate(data.path)}
+                >
+                  <div className="max-w-sm rounded overflow-hidden shadow-lg min-h-[550px]">
                     <img
-                      className="w-full"
+                      className="w-full max-h-[300px]"
                       src={
                         "https://ik.imagekit.io/gokulnathk/PartyEvent/" +
                         data.img_src

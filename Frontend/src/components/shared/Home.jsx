@@ -1,5 +1,6 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import imgPlaceholder from "../../assets/images/img_alt.jpg";
 
 const Home = () => {
   return (
@@ -8,8 +9,10 @@ const Home = () => {
         <div className="relative w-full">
           <LazyLoadImage
             src="https://ik.imagekit.io/gokulnathk/PartyEvent/party05(1).jpg"
-            placeholderSrc="../../assets/images/img_alt.jpg"
-            alt="../../assets/images/img_alt.jpg"
+            placeholderSrc={imgPlaceholder}
+            alt="Image Alternate"
+            width={1530}
+            height={780}
             // effect="blur"
             className="size-full w-full object-scale-down object-center flex align-middle"
           />

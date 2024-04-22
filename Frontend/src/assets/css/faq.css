@@ -1,10 +1,10 @@
 /* FAQ container styles */
+
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  background-color: #eac8c8;
 }
 
 .faq-container h1 {
@@ -42,7 +42,7 @@
 
 .faq-icon.active {
   transform: rotate(180deg);
-  color: red;
+color: #000;
 }
 
 /* FAQ answer styles */
