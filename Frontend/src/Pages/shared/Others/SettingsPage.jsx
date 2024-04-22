@@ -6,8 +6,8 @@ const SettingsPage = () => {
   return (
     <>
       <div className="">
-          <Header title={"Settings"}/>
-        <div class="col-span-8 overflow-hidden rounded-xl sm:px-8">
+        <Header title={"Settings"} />
+        <div className="col-span-8 overflow-hidden rounded-xl sm:px-8">
           <Settings />
         </div>
       </div>
