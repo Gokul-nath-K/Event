@@ -3,12 +3,12 @@ import React, { useState } from "react";
 const ConfigMaintenance = ({ open, setOpen }) => {
   return (
     <>
-      <div class="relative mb-10 mt-12 mx-16">
-        <p class="py-2 text-xl font-semibold">Switch to maintenance mode</p>
-        <p class="inline-flex items-center rounded-full bg-amber-100 px-4 py-1 text-amber-600">
+      <div className="relative mb-10 mt-12 mx-16">
+        <p className="py-2 text-xl font-semibold">Switch to maintenance mode</p>
+        <p className="inline-flex items-center rounded-full bg-amber-100 px-4 py-1 text-amber-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="mr-2 h-5 w-5"
+            className="mr-2 h-5 w-5"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -22,7 +22,7 @@ const ConfigMaintenance = ({ open, setOpen }) => {
         </p>
         <br />
         <button
-          class="ml-auto text-sm font-semibold text-amber-600 underline decoration-2 pt-4"
+          className="ml-auto text-sm font-semibold text-amber-600 underline decoration-2 pt-4"
           onClick={() => setOpen(true)}
         >
           Continue

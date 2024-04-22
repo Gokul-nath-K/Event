@@ -24,6 +24,7 @@ const ConfigPage=lazy(()=> import("./Pages/Admin/ConfigPage"));
 const EventDashboard=lazy(()=> import("./Pages/Admin/EventDashboard"));
 const PlansPage=lazy(()=> import("./Pages/user/PlansPage"));
 const PaymentPage=lazy(()=> import("./Pages/user/PaymentPage"));
+const UserDetailsPage = lazy(() => import('./Pages/Admin/UserDetailsPage'))
 
 
 
@@ -62,9 +63,11 @@ function App() {
 
           </Route>
           <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="config" element={<ConfigPage />} />
             <Route path="event-data" element={<EventDashboard />} />
+            <Route path="user-data" element={<UserDetailsPage />} />
             <Route path="settings" element={<SettingsPage />} />
           </Route>
           <Route path="/login" element={<LoginPage />} />
