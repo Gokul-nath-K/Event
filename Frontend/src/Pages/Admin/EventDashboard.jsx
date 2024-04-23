@@ -9,7 +9,7 @@ const EventDashboard = () => {
       <div className="col-span-8 overflow-hidden rounded-xl sm:px-8">
         <Header title={"Upcoming events"} />
         <EventCard />
-        <Header title={"Completed events"} />
+        <Header title={"Event records"} />
         <EventsTable />
       </div>
     </>

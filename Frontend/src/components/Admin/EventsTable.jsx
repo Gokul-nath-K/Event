@@ -1,4 +1,5 @@
 import React from "react";
+import { eventData } from "../../assets/Data/EventData";
 
 const EventsTable = () => {
   return (
@@ -31,24 +32,22 @@ const EventsTable = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className="bg-white border-b ">
-              <td className="px-6 py-4 font-medium ">01</td>
-              <td className="px-6 py-4">Jenifer</td>
+            {
+              eventData && eventData.map((ele) => (
+                <>
+                  <tr className="bg-white border-b " key={ele.id}>
+                    <td className="px-6 py-4 font-medium ">{ele.id}</td>
+                    <td className="px-6 py-4">{ele.name}</td>
 
-              <td className="px-6 py-4 ">Wedding</td>
-              <td className="px-6 py-4 ">10-FEB-2024</td>
-              <td className="px-6 py-4 ">Completed</td>
-              <td className="px-6 py-4 ">7.5L</td>
-            </tr>
-            <tr className="bg-white border-b ">
-              <td className="px-6 py-4 font-medium ">02</td>
-              <td className="px-6 py-4">Arun</td>
-
-              <td className="px-6 py-4 ">Aniversary</td>
-              <td className="px-6 py-4 ">17-DEC-2023</td>
-              <td className="px-6 py-4 ">Completed</td>
-              <td className="px-6 py-4 ">2.5L</td>
-            </tr>
+                    <td className="px-6 py-4 ">{ele.category}</td>
+                    <td className="px-6 py-4 ">{ele.date}</td>
+                    <td className="px-6 py-4 ">{ele.status}</td>
+                    <td className="px-6 py-4 ">{ele.budget}</td>
+                  </tr>
+                
+                </>
+              ))
+            }
           </tbody>
         </table>
       </div>
