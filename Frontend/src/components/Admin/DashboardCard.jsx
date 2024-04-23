@@ -1,6 +1,6 @@
 import React from "react";
 
-const DashboardCard = () => {
+const DashboardCard = ({title, count}) => {
   return (
     <>
       <div className="relative flex w-72 p-4 flex-col min-w-0 mb-6 break-words bg-white border-black  border-[1px] shadow-lg rounded-2xl bg-clip-border">
@@ -9,12 +9,12 @@ const DashboardCard = () => {
             <div className="flex-none w-2/3 max-w-full px-3">
               <div>
                 <p className="mb-0 font-sans font-semibold leading-normal text-lg">
-                  Today's Money
+                  { title }
                 </p>
                 <h5 className="mb-0 font-bold">
-                  $53,000
+                  { count }
                   <span className="leading-normal text-sm font-weight-bolder text-lime-500">
-                    +55%
+                    
                   </span>
                 </h5>
               </div>
