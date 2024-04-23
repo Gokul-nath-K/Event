@@ -7,8 +7,8 @@ const ProfilePage = () => {
         <div className="w-full lg:flex pt-20 justify-center absolute top-52">
           <div className="">
             <img
-              src="https://ik.imagekit.io/gokulnathk/PartyEvent/party05(1).jpg"
-              className="object-fill h-[265px] w-[200px]"
+              src="https://static.vecteezy.com/system/resources/previews/005/005/788/original/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg"
+              className="object-fill h-[265px] w-[200px] border border-gray-400"
             />
           </div>
           <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">

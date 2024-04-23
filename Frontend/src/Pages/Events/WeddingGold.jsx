@@ -72,7 +72,7 @@ function GoldenPackageMarriage() {
           Cost-Rs 1,68,999-1,99,999/-
           <span className="hhii">(price varies based on decorations)</span>
         </h3>
-        <Link to="/weddingform">
+        <Link to="/payment" state={{plan : "Gold"}}>
           {" "}
           <button className="hiking">Purchase </button>{" "}
         </Link>

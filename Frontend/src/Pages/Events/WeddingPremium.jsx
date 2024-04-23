@@ -77,7 +77,7 @@ function PremiumPackageMarriage() {
           </span>
         </ul>
         <h3 className='tamount'>Cost-Rs 3,00,000-4,99,999/-<span className='hhii'>(price varies based on decorations)</span></h3> 
-      <Link to="/weddingform"> < button className='ttut'>Purchase </button></Link> 
+      <Link to="/payment" state={{plan : "Premimum"}}> < button className='ttut'>Purchase </button></Link> 
         <p className='bitto'>   Gold wedding package includes mandap, car decoration, stage decoration, passage decoration, home decoration, entrance, flower booth. NFD provides the best wedding decoration service on Nepal.</p>
 
 <p className='kitto'><b>NOTE:</b>
